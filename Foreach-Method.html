@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For Each Method</title>
+  </head>
+  <body>
+    <script>
+      let Name = [
+        {
+          Name1: "Vishnu",
+          Age: 21,
+          Work: "Student",
+        },
+        {
+          Name1: "Harsha",
+          Age: 20,
+          Work: "Student",
+        },
+        {
+          Name1: "Bhavesh",
+          Age: 10,
+          Work: "Student",
+        },
+        {
+          Name1: "Rani",
+          Age: 21,
+          Work: "Student",
+        },
+      ];
+      function Hello(item) {
+        console.log(item.Name1);
+      }
+
+      Name.forEach(Hello);
+    </script>
+  </body>
+</html>

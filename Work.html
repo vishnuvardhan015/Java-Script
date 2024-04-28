@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice</title>
+  </head>
+  <body>
+    <script>
+      let Data = [
+        {
+          Name: "Vishnu Vardhan Reddy",
+          Age: 21,
+          Working: "Team Lead",
+          State: "Andhra Pradesh",
+        },
+        {
+          Name: "Harsha Vardhan Reddy",
+          Age: 20,
+          Working: "Employee",
+          State: "Andhra Pradesh",
+        },
+        {
+          Name: " Madhavi Reddy",
+          Age: 41,
+          Working: "Employee",
+          State: "Andhra Pradesh",
+        },
+        {
+          Name: "Venkateshwarlu Reddy",
+          Age: 60,
+          Working: "Leader",
+          State: "Andhra Pradesh",
+        },
+        {
+          Name: "Bhavesh Kumar Reddy",
+          Age: 10,
+          Working: "Intern",
+          State: "Andhra Pradesh",
+        },
+      ];
+
+      let Omen = Data.forEach(function (item) {
+        console.log(item.Age);
+      });
+
+      let Omen1 = Data.map(function (item1) {
+        return item1.Name;
+      });
+      console.log(Omen1);
+
+      let Omen2 = Data.filter(function (item2) {
+        return item2.Working;
+      });
+      console.log(Omen2);
+
+      let Omen3 = Data.find(function (item3) {
+        return item3.Age === 21;
+      });
+      console.log(Omen3);
+      let Omen4 = Data.reduce(function (item4, item5) {
+        console.log(`the age of the ${item4}`);
+        console.log(`total age of the each person ${item5.Age}`);
+        item4 += item5.Age;
+        return item4;
+        console.log(item4);
+      });
+
+      let Num = 12.4523697;
+      let Result = Math.sqrt(Num);
+      let Num1 = [1, 3, 2, 6, 5, 4, 7, 9, 8, 10];
+      let Result1 = Math.max(1, 3, 2, 6, 5, 4, 7, 9, 8, 10);
+      let Result2 = Math.min(1, 3, 2, 6, 5, 4, 7, 9, 8, 10);
+      let Result3 = Math.random();
+      let Result4 = Math.ceil(Num);
+      let Result5 = Math.floor(Num);
+      console.log(Result5);
+      console.log(Result4);
+      console.log(Result3);
+      console.log(Result1);
+      console.log(Result2);
+      console.log(Result);
+    </script>
+  </body>
+</html>

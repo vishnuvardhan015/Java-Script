@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fliter -Method</title>
+  </head>
+  <body>
+    <script>
+      let Data = [
+        {
+          First_Name: "Vishnu Vardhan Reddy",
+          Last_Name: "Dagumati",
+          Age: 21,
+        },
+        {
+          First_Name: "Harsha Vardhan Reddy",
+          Last_Name: "Dagumati",
+          Age: 20,
+        },
+        {
+          First_Name: "Venkateswarlu reddy",
+          Last_Name: "Dagumati",
+          Age: 60,
+        },
+        {
+          First_Name: "Madhavi Reddy",
+          Last_Name: "Dagumati",
+          Age: 21,
+        },
+        {
+          First_Name: "Bhavesh Kumar Reddy",
+          Last_Name: "Dagumati",
+          Age: 21,
+        },
+      ];
+
+      let Name = Data.filter(function (item) {
+        return item.First_Name === "Vishnu Vardhan Reddy";
+      });
+      console.log(Name);
+
+      let Name1 = Data.forEach(function (item1) {
+        console.log(item1.Age);
+      });
+
+      let Name2 = Data.map(function (item2) {
+        return item2.Age;
+      });
+      console.log(Name2);
+    </script>
+  </body>
+</html>

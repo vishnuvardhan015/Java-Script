@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array-Iterations</title>
+  </head>
+  <body>
+    <script>
+      let Num = [
+        {
+          First_Name: "Vishnu Vardhan Reddy",
+          Last_Name: "Dagumati",
+          Age: 21,
+        },
+        {
+          First_Name: "Harsha Vardhan Reddy",
+          Last_Name: "Dagumati",
+          Age: 20,
+        },
+        {
+          First_Name: "Venkateswarlu reddy",
+          Last_Name: "Dagumati",
+          Age: 60,
+        },
+        {
+          First_Name: "Madhavi Reddy",
+          Last_Name: "Dagumati",
+          Age: 21,
+        },
+        {
+          First_Name: "Bhavesh Kumar Reddy",
+          Last_Name: "Dagumati",
+          Age: 21,
+        },
+      ];
+
+      let Num1 = function (item) {
+        return item.Age;
+      };
+
+      console.log(Num.map(Num1)); // Using console.log to print the result of map
+
+      // forEach does not return a new array, it just iterates over the array
+      Num.forEach(function (item) {
+        console.log(Num1(item)); // Logging each age
+      });
+    </script>
+  </body>
+</html>

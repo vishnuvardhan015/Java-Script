@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array - Method</title>
+  </head>
+  <body>
+    <script>
+      let Name = [
+        "Vishnu",
+        "Harsha",
+        "Bhavesh",
+        "Madhavi",
+        "Venakateswarlu reddy",
+      ];
+      console.log(Name.length);
+      console.log(Name[2]);
+      console.log(Name[Name.length - 1]);
+
+      let Names = ["Hari", "Raju", "Ravi", "Hanuman", "Veera"];
+      let AllNames = Name.concat(Names);
+      console.log(AllNames);
+
+      AllNames.push("Vision");
+      console.log(AllNames);
+
+      AllNames.pop();
+      console.log(AllNames);
+
+      AllNames.unshift("Sun");
+      console.log(AllNames);
+
+      AllNames.shift();
+      console.log(AllNames);
+    </script>
+  </body>
+</html>

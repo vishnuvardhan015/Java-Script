@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reduce Method</title>
+  </head>
+  <body>
+    <script>
+      let Data = [
+        {
+          First_Name: "Vishnu Vardhan Reddy",
+          Last_Name: "Dagumati",
+          Age: 21,
+        },
+        {
+          First_Name: "Harsha Vardhan Reddy",
+          Last_Name: "Dagumati",
+          Age: 20,
+        },
+        {
+          First_Name: "Venkateswarlu reddy",
+          Last_Name: "Dagumati",
+          Age: 60,
+        },
+        {
+          First_Name: "Madhavi Reddy",
+          Last_Name: "Dagumati",
+          Age: 21,
+        },
+        {
+          First_Name: "Bhavesh Kumar Reddy",
+          Last_Name: "Dagumati",
+          Age: 21,
+        },
+      ];
+      let Num = Data.reduce(function (item, items) {
+        console.log(`age of person ${item}`);
+        console.log(`total of Age ${items.Age}`);
+        item += items.Age;
+        return item;
+      }, 0);
+      console.log(Num);
+    </script>
+  </body>
+</html>

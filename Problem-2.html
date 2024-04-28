@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>problem-2</title>
+  </head>
+  <body>
+    <script>
+      let Current_Bill = [1811, 2510, 1111, 1542, 1634, 1896];
+      let Gas_Bill = [900, 635, 2896, 456, 2350];
+
+      function Bill(total) {
+        let Sum = 0;
+        for (let i = 0; i < total.length; i++) {
+          Sum += total[i];
+        }
+        return Sum;
+      }
+
+      let Current_Bill1 = Bill(Current_Bill);
+      let Gas_Bill1 = Bill(Gas_Bill);
+
+      console.log({
+        current: Current_Bill1, // Corrected: Changed Current_Bill to Current_Bill1
+        Gas: Gas_Bill1, // Corrected: Changed Gas_Bill to Gas_Bill1
+      });
+    </script>
+  </body>
+</html>
