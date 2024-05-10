@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class-Name, Class-list</title>
+  </head>
+  <body>
+    <ul class="Names">
+      <li>Dagumati Vishnu</li>
+      <li>Dagumati Harsha</li>
+      <li>Dagumati Madhavi</li>
+      <li>Dagumati Venkateswarlu</li>
+      <li>Dagumati Bhavesh Kumar</li>
+    </ul>
+
+    <script>
+      let Name = document.querySelector("ul");
+
+      Name.className = "Vishnu";
+
+      Name.classList.add("vision");
+      Name.classList.add("vision1");
+      Name.classList.add("vision2");
+
+      Name.classList.remove("vision");
+
+      Name.classList.contains("vision1");
+
+      Name.classList.toggle("vision4");
+    </script>
+  </body>
+</html>

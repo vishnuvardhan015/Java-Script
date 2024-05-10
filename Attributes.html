@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attributes</title>
+  </head>
+  <body>
+    <h1>I am Main heading one</h1>
+    <ul class="Names" id="vision" data-name="vision-1">
+      <li>Dagumati Venkateswarlu Reddy</li>
+      <li>Dagumati Madhavi</li>
+      <li>Dagumati Vishnuvardhan Reddy</li>
+      <li>Dagumat Harsha Vardhan Reddy</li>
+      <li>Dagumati Bahavesh kumar Reddy</li>
+    </ul>
+    <script>
+      let call = document.querySelector(".Names");
+      console.log(call.attributes);
+      console.log(call.getAttribute("class"));
+
+      let call1 = document.querySelector("h1");
+      console.log(call1.getAttribute("class"));
+      console.log(call1.setAttribute("class", "New-Names"));
+      console.log(call.dataset);
+    </script>
+  </body>
+</html>

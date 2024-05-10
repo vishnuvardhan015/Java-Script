@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo-1</title>
+    <style>
+      body {
+        background-color: aqua;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>I am Heading-1</h1>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. In incidunt,
+      error vel rem est ex reprehenderit debitis ab dolorem accusamus!
+    </p>
+    <h2>I am Sub-heading</h2>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi obcaecati
+      pariatur quos consequatur autem dolores.
+    </p>
+    <script>
+      let Data = [
+        {
+          First_Name: "Vishnu Vardhan Reddy",
+          Last_Name: "Dagumati",
+          Age: 21,
+        },
+        {
+          First_Name: "Harsha Vardhan Reddy",
+          Last_Name: "Dagumati",
+          Age: 20,
+        },
+        {
+          First_Name: "Venkateswarlu reddy",
+          Last_Name: "Dagumati",
+          Age: 60,
+        },
+        {
+          First_Name: "Madhavi Reddy",
+          Last_Name: "Dagumati",
+          Age: 21,
+        },
+        {
+          First_Name: "Bhavesh Kumar Reddy",
+          Last_Name: "Dagumati",
+          Age: 21,
+        },
+      ];
+
+      Data.forEach(function (item) {
+        console.log(item.First_Name);
+      });
+
+      let two = Data.map(function (item) {
+        return item.Age;
+      });
+      console.log(two);
+
+      let one = Data.find(function (item) {
+        return item.Age === 21;
+      });
+      console.log(one);
+
+      let Name = Data.filter(function (item) {
+        return item.Age === 60;
+      });
+      console.log(Name);
+    </script>
+  </body>
+</html>
